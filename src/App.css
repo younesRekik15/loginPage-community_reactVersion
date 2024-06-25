@@ -3,3 +3,30 @@
     --primary-text: #0C1421;
     --secondary-text: #313957;
 }
+
+@font-face {
+    font-family: roboto;
+    src: url("public/fonts/Roboto/Roboto-Regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'sf pro display';
+    src: url("public/fonts/sf-pro-display-cufonfonts/SFPRODISPLAYREGULAR.OTF") format('opentype');
+}
+
+@font-face {
+    font-family: 'sf pro rounded';
+    src: url("public/fonts/sf-pro-display-SF-Pro-Rounded/SF-Pro-Rounded-Regular.otf") format('opentype');
+}
+
+@media only screen and (max-width: 870px) {
+.not-small-screen-only {
+    display: none;
+}
+}
+
+@media only screen and (min-width: 871px) {
+    .small-screen-only {
+        display: none;
+    }
+    }
