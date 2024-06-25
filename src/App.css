@@ -1,32 +1,96 @@
 :root {
-    --link: #1E4AE9;
-    --primary-text: #0C1421;
-    --secondary-text: #313957;
+  --link: #1e4ae9;
+  --primary-text: #0c1421;
+  --secondary-text: #313957;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  gap: 32px;
+  padding: 32px;
+  width: calc(100% - 64px);
+  height: calc(100vh - 64px);
+}
+
+.copyright {
+    width: 100%;
+    font-family: Roboto;
+    text-align: center;
+    order: 3;
+}
+
+.img-part {
+  width: 100%;
+  height: 100%;
+  background-image: url("assets/images/aside-img.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 24px;
+  order: 2;
+}
+
+.login-part {
+  width: 388px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  order: 1;
 }
 
 @font-face {
-    font-family: roboto;
-    src: url("public/fonts/Roboto/Roboto-Regular.ttf") format('truetype');
+  font-family: roboto;
+  src: url("public/fonts/Roboto/Roboto-Regular.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: 'sf pro display';
-    src: url("public/fonts/sf-pro-display-cufonfonts/SFPRODISPLAYREGULAR.OTF") format('opentype');
+  font-family: "sf pro display";
+  src: url("public/fonts/sf-pro-display-cufonfonts/SFPRODISPLAYREGULAR.OTF")
+    format("opentype");
 }
 
 @font-face {
-    font-family: 'sf pro rounded';
-    src: url("public/fonts/sf-pro-display-SF-Pro-Rounded/SF-Pro-Rounded-Regular.otf") format('opentype');
+  font-family: "sf pro rounded";
+  src: url("public/fonts/sf-pro-display-SF-Pro-Rounded/SF-Pro-Rounded-Regular.otf")
+    format("opentype");
 }
 
 @media only screen and (max-width: 870px) {
-.not-small-screen-only {
+  .not-small-screen-only {
     display: none;
+  }
+
+  .container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    padding: 24px 0;
+}
+
+.img-part {
+    width: calc(100% - 48px);
+    height: 180px;
+    margin: 0 24px;
+    order: 1;
+}
+
+.login-part {
+    width: 100%;
+    height: fit-content;
+    order: 2;
 }
 }
 
 @media only screen and (min-width: 871px) {
-    .small-screen-only {
-        display: none;
-    }
-    }
+  .small-screen-only {
+    display: none;
+  }
+}
