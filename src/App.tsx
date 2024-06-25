@@ -17,14 +17,14 @@ const App = () => {
             </p>
           </header>
           <form action="" method="POST">
-            <Input type="email" placeholder="Example@email.com"></Input>
-            <Input type="password" placeholder="At least 8 characters"></Input>
+            <Input type="email" placeholder="Example@email.com" width={{'width':'100%'}}></Input>
+            <Input type="password" placeholder="At least 8 characters" width={{'width':'100%'}}></Input>
             <a>Forgot Password?</a>
-            <MainButton>sign in</MainButton>
+            <MainButton width={{'width':'100%'}}>sign in</MainButton>
           </form>
           <div className="social-buttons-container">
-            <SocialButton brandName="Facebook"></SocialButton>
-            <SocialButton brandName="Google"></SocialButton>
+            <SocialButton brandName="Facebook" width={{'width':'100%'}}></SocialButton>
+            <SocialButton brandName="Google" width={{'width':'100%'}}></SocialButton>
           </div>
           <p>
             Don't you have an account? <a href="">Sign up</a>

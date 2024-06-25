@@ -1,12 +1,12 @@
-import { Children } from "react";
 import "./MainButton.css";
 
 interface Promp {
   children: string;
+  width?: {};
 }
 
-const MainButton = ({ children }: Promp) => {
-  return <button className="main-button">{children}</button>;
+const MainButton = ({ children, width={'width':'388px'} }: Promp) => {
+  return <button className="main-button" style={width}>{children}</button>;
 };
 
 export default MainButton;
