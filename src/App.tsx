@@ -8,8 +8,8 @@ const App = () => {
       <div className="img-part"></div>
       <div className="login-part">
         <div className="flex-space-item"></div>
-        <main>
-          <header>
+        <main className="login-main">
+          <header className="login-header">
             <h1>Welcome Back 👋</h1>
             <p>
               Today is a new day. It's your day. You shape it. <br />
@@ -17,16 +17,30 @@ const App = () => {
             </p>
           </header>
           <form action="" method="POST">
-            <Input type="email" placeholder="Example@email.com" width={{'width':'100%'}}></Input>
-            <Input type="password" placeholder="At least 8 characters" width={{'width':'100%'}}></Input>
-            <a>Forgot Password?</a>
-            <MainButton width={{'width':'100%'}}>sign in</MainButton>
+            <Input
+              type="email"
+              placeholder="Example@email.com"
+              width={{ width: "100%" }}
+            ></Input>
+            <Input
+              type="password"
+              placeholder="At least 8 characters"
+              width={{ width: "100%" }}
+            ></Input>
+            <a className="forgot-password">Forgot Password?</a>
+            <MainButton width={{ width: "100%" }}>sign in</MainButton>
           </form>
           <div className="social-buttons-container">
-            <SocialButton brandName="Facebook" width={{'width':'100%'}}></SocialButton>
-            <SocialButton brandName="Google" width={{'width':'100%'}}></SocialButton>
+            <SocialButton
+              brandName="Facebook"
+              width={{ width: "100%" }}
+            ></SocialButton>
+            <SocialButton
+              brandName="Google"
+              width={{ width: "100%" }}
+            ></SocialButton>
           </div>
-          <p>
+          <p className="sign-up">
             Don't you have an account? <a href="">Sign up</a>
           </p>
         </main>

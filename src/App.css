@@ -8,6 +8,10 @@ body {
   margin: 0;
 }
 
+a {
+  color: var( --link );
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -19,10 +23,10 @@ body {
 }
 
 .copyright {
-    width: 100%;
-    font-family: Roboto;
-    text-align: center;
-    order: 3;
+  width: 100%;
+  font-family: Roboto;
+  text-align: center;
+  order: 3;
 }
 
 .img-part {
@@ -44,20 +48,62 @@ body {
   order: 1;
 }
 
+.login-header h1, .login-header p {
+  margin: 0;
+  color: var( --primary-text );
+}
+
+.login-header {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.login-header h1 {
+  font-family: sf-pro-rounded;
+  font-size: 36px;
+}
+
+.login-main {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.login-header p {
+  font-family: sf-pro-display;
+  font-size: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.forgot-password {
+  width: fit-content;
+  margin-left: auto;
+}
+
+.sign-up {
+  text-align: center;
+}
+
 @font-face {
   font-family: roboto;
   src: url("public/fonts/Roboto/Roboto-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "sf pro display";
+  font-family: sf-pro-display;
   src: url("public/fonts/sf-pro-display-cufonfonts/SFPRODISPLAYREGULAR.OTF")
     format("opentype");
 }
 
 @font-face {
-  font-family: "sf pro rounded";
-  src: url("public/fonts/sf-pro-display-SF-Pro-Rounded/SF-Pro-Rounded-Regular.otf")
+  font-family: sf-pro-rounded;
+  src: url("public/fonts/SF-Pro-Rounded/SF-Pro-Rounded-Regular.otf")
     format("opentype");
 }
 
@@ -73,20 +119,41 @@ body {
     flex-direction: column;
     gap: 27px;
     padding: 24px 0;
-}
+  }
 
-.img-part {
+  .img-part {
     width: calc(100% - 48px);
     height: 180px;
     margin: 0 24px;
     order: 1;
-}
+  }
 
-.login-part {
+  .login-part {
     width: calc(100% - 48px);
     padding: 0 24px;
     height: fit-content;
     order: 2;
+  }
+
+  .login-main {
+    gap: 24px;
+  }
+
+  
+.login-header {
+  gap: 16px;
+}
+
+.login-header h1 {
+  font-size: 24px;
+}
+
+.login-header p {
+  font-size: 15px;
+}
+
+form {
+  gap: 16px;
 }
 }
 
