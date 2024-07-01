@@ -30,15 +30,18 @@ const App = () => {
             <a className="forgot-password">Forgot Password?</a>
             <MainButton width={{ width: "100%" }}>sign in</MainButton>
           </form>
-          <div className="social-buttons-container">
-            <SocialButton
-              brandName="Facebook"
-              width={{ width: "100%" }}
-            ></SocialButton>
-            <SocialButton
-              brandName="Google"
-              width={{ width: "100%" }}
-            ></SocialButton>
+          <div className="or-form">
+            <div className="or-container"><span className="or"><span>Or</span> <span className="small-screen-only">sign in with</span></span></div>
+            <div className="social-buttons-container">
+              <SocialButton
+                brandName="Google"
+                width={{ width: "100%" }}
+              ></SocialButton>
+              <SocialButton
+                brandName="Facebook"
+                width={{ width: "100%" }}
+              ></SocialButton>
+            </div>
           </div>
           <p className="sign-up">
             Don't you have an account? <a href="">Sign up</a>

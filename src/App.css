@@ -86,8 +86,52 @@ form {
   margin-left: auto;
 }
 
+.social-buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.or-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.or-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 0;
+}
+
+.or-container::before {
+  content: "";
+  background-color: #CFDFE2;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  z-index: 0;
+}
+
+.or {
+  display: inline-block;
+  padding: 10px 16px;
+  position: relative;
+  z-index: 1;
+  background-color: #FFFFFF;
+  color: #294957;
+}
+
+.or span {
+  font-family: Roboto;
+  font-size: 16px;
+}
+
 .sign-up {
   text-align: center;
+  margin: 0;
 }
 
 @font-face {
@@ -154,6 +198,18 @@ form {
 
 form {
   gap: 16px;
+}
+
+.or-form {
+  gap: 16px;
+}
+
+.or {
+  padding-top: 18px;
+}
+
+.social-buttons-container {
+  flex-direction: row;
 }
 }
 
