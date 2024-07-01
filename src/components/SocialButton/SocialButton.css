@@ -9,6 +9,10 @@
   color: var(--secondary-text);
 }
 
+.social-button:hover {
+  cursor: pointer;
+}
+
 .icon {
   width: 28px;
   height: 28px;

@@ -7,6 +7,7 @@
   font-size: 20px;
   color: #ffffff;
   background-color: #162d3a;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 870px) {

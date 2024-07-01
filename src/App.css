@@ -6,6 +6,7 @@
 
 body {
   margin: 0;
+  font-family: Roboto;
 }
 
 a {
@@ -15,7 +16,7 @@ a {
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  place-items: center;
+  justify-items: center;
   gap: 32px;
   padding: 32px;
   width: calc(100% - 64px);
@@ -24,8 +25,8 @@ a {
 
 .copyright {
   width: 100%;
-  font-family: Roboto;
   text-align: center;
+  color: #959CB6;
   order: 3;
 }
 
@@ -73,6 +74,7 @@ a {
 .login-header p {
   font-family: sf-pro-display;
   font-size: 20px;
+  line-height: 160%;
 }
 
 form {
@@ -125,13 +127,14 @@ form {
 }
 
 .or span {
-  font-family: Roboto;
   font-size: 16px;
 }
 
 .sign-up {
   text-align: center;
   margin: 0;
+  line-height: 160%;
+  font-size: 18px;
 }
 
 @font-face {
@@ -210,6 +213,10 @@ form {
 
 .social-buttons-container {
   flex-direction: row;
+}
+
+.sign-up {
+  font-size: 16px;
 }
 }
 
