@@ -31,7 +31,12 @@ const App = () => {
             <MainButton width={{ width: "100%" }}>sign in</MainButton>
           </form>
           <div className="or-form">
-            <div className="or-container"><span className="or"><span>Or</span> <span className="small-screen-only">sign in with</span></span></div>
+            <div className="or-container">
+              <span className="or">
+                <span>Or</span>{" "}
+                <span className="small-screen-only">sign in with</span>
+              </span>
+            </div>
             <div className="social-buttons-container">
               <SocialButton
                 brandName="Google"

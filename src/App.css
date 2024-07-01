@@ -11,6 +11,8 @@ body {
 
 a {
   color: var( --link );
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .container {
@@ -63,6 +65,7 @@ a {
 .login-header h1 {
   font-family: sf-pro-rounded;
   font-size: 36px;
+  color: var( --primary-text );
 }
 
 .login-main {
@@ -75,6 +78,7 @@ a {
   font-family: sf-pro-display;
   font-size: 20px;
   line-height: 160%;
+  color: var( --secondary-text );
 }
 
 form {
@@ -135,6 +139,7 @@ form {
   margin: 0;
   line-height: 160%;
   font-size: 18px;
+  color: var( --secondary-text );
 }
 
 @font-face {

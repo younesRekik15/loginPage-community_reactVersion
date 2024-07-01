@@ -13,7 +13,7 @@
 
 .input p,
 .input input {
-  color: var(--primary-text);
+  color: var(--secondary-text);
 }
 
 .input p {
