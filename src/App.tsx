@@ -33,7 +33,7 @@ const App = () => {
           <div className="or-form">
             <div className="or-container">
               <span className="or">
-                <span>Or</span>{" "}
+                <span>Or</span>
                 <span className="small-screen-only">sign in with</span>
               </span>
             </div>
