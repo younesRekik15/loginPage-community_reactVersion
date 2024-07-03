@@ -4,7 +4,7 @@ import Input from "./components/Input/Input";
 import { useState } from "react";
 
 const App = () => {
-  const [isSignIn, setIsSignIn] = useState(false);
+  const [isSignIn, setIsSignIn] = useState(true);
   const toggle = () => {
     setIsSignIn(!isSignIn);
   };
@@ -83,9 +83,9 @@ const App = () => {
               <span className="or">
                 <span>Or</span>
                 {isSignIn ? (
-                  <span className="small-screen-only">sign in with</span>
+                  <span className="small-screen-only"> sign in with</span>
                 ) : (
-                  <span className="small-screen-only">sign up with</span>
+                  <span className="small-screen-only"> sign up with</span>
                 )}
               </span>
             </div>
