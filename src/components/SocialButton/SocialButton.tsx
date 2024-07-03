@@ -9,7 +9,7 @@ interface Promp {
 const SocialButton = ({ brandName, width = { width: "359px" } }: Promp) => {
   return (
     <button className="social-button" style={width}>
-      <img className="icon" src={"/public/assets/icons/" + brandName + ".svg"} />
+      <img className="icon" src={"/public/static/icons/" + brandName + ".svg"} />
       <span className="not-small-screen-only">sign in with</span>{" "}
       <span className="social-button-name">{brandName}</span>
     </button>
