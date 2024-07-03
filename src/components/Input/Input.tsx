@@ -2,14 +2,15 @@ import "./Input.css";
 
 interface Promp {
   type: string;
+  label: string;
   placeholder: string;
   width?: {};
 }
 
-const input = ({ type, placeholder, width = { width: "388px" } }: Promp) => {
+const input = ({ type, label, placeholder, width = { width: "388px" } }: Promp) => {
   return (
     <label htmlFor={type} className="input" style={width}>
-      <p>{type.charAt(0).toUpperCase() + type.slice(1)}</p>
+      <p>{label}</p>
       <input type={type} id={type} placeholder={placeholder} />
     </label>
   );
