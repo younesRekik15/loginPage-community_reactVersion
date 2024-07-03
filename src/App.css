@@ -33,8 +33,11 @@ a {
 }
 
 .img-part {
-  width: 100%;
-  height: 100%;
+  width: calc(50% - 48px);
+  height: calc(100vh - 64px);
+  position: fixed;
+  top: 32px;
+  right: 32px;
   background-image: url("assets/images/aside-img.jpg");
   background-size: cover;
   background-position: center;
@@ -175,6 +178,7 @@ form {
   }
 
   .img-part {
+    position: static;
     width: calc(100% - 48px);
     height: 180px;
     margin: 0 24px;

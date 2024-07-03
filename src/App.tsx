@@ -63,4 +63,11 @@ const App = () => {
   );
 };
 
+function SignUp(){
+  return (
+    <>
+    </>
+  );
+}
+
 export default App;
