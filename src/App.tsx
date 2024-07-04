@@ -2,6 +2,8 @@ import SocialButton from "./components/SocialButton/SocialButton";
 import MainButton from "./components/MainButton/MainButton";
 import Input from "./components/Input/Input";
 import { useState } from "react";
+import FacebookIcon from "./components/assets/icons/Facebook.svg";
+import GoogleIcon from "./components/assets/icons/Google.svg";
 
 const App = () => {
   const [isSignIn, setIsSignIn] = useState(true);
@@ -93,11 +95,13 @@ const App = () => {
               <SocialButton
                 brandName="Google"
                 registrationType={isSignIn ? "sign in" : "sign up"}
+                brandLink={GoogleIcon}
                 width={{ width: "100%" }}
               ></SocialButton>
               <SocialButton
                 brandName="Facebook"
                 registrationType={isSignIn ? "sign in" : "sign up"}
+                brandLink={FacebookIcon}
                 width={{ width: "100%" }}
               ></SocialButton>
             </div>
